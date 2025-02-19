@@ -18,9 +18,6 @@ const About = lazy(() => import('./routes/about.tsx'))
 //   basePath: "http://localhost:4433", // Adjust if using Ory Cloud
 // });
 
-
-
-
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
@@ -28,11 +25,6 @@ createRoot(document.getElementById('root')!).render(
         {/* Regular Pages */}
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
-
-        <Route path="student-profile-setup" element={<StudentProfileSetup />} />
-        <Route path="student-inbox" element={<InboxPage />} />
-        <Route path="student-inbox/:jobId" element={<JobDetailsPage />} />
-
 
         {/* AUTH */}
         <Route path="login" element={<Login />} />
@@ -59,5 +51,5 @@ createRoot(document.getElementById('root')!).render(
 
       </Routes>
     </BrowserRouter>
-  </StrictMode>,
+  </StrictMode>
 )
