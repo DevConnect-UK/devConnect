@@ -1,16 +1,16 @@
-import { StrictMode } from 'react'
+import { lazy, StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { BrowserRouter, Route, Routes } from 'react-router'
-import Home from './routes/home.tsx'
-import Login from './routes/login.tsx'
-import Signup from './routes/signup.tsx'
-import AdminDash from './routes/admin/admin-dash.tsx'
-import StudentProfileSetup from './routes/student/student-profile-setup.tsx'
-import ProjectForm from './routes/business/business-job-form.tsx'
-import InboxPage from './routes/student/student-inbox.tsx'
-import JobDetailsPage from './routes/student/student-inbox-item.tsx'
-import About from './routes/about.tsx'
+const Home = lazy(() => import('./routes/home.tsx'))
+const Login = lazy(() => import('./routes/login.tsx'))
+const Signup = lazy(() => import('./routes/signup.tsx'))
+const AdminDash = lazy(() => import('./routes/admin/admin-dash.tsx'))
+const StudentProfileSetup = lazy(() => import('./routes/student/student-profile-setup.tsx'))
+const ProjectForm = lazy(() => import('./routes/business/business-job-form.tsx'))
+const InboxPage = lazy(() => import('./routes/student/student-inbox.tsx'))
+const JobDetailsPage = lazy(() => import('./routes/student/student-inbox-item.tsx'))
+const About = lazy(() => import('./routes/about.tsx'))
 
 // import { Ory } from "@ory/client";
 
@@ -28,6 +28,11 @@ createRoot(document.getElementById('root')!).render(
         {/* Regular Pages */}
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
+
+        <Route path="student-profile-setup" element={<StudentProfileSetup />} />
+        <Route path="student-inbox" element={<InboxPage />} />
+        <Route path="student-inbox/:jobId" element={<JobDetailsPage />} />
+
 
         {/* AUTH */}
         <Route path="login" element={<Login />} />
