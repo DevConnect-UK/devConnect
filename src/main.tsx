@@ -1,0 +1,58 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import { BrowserRouter, Route, Routes } from 'react-router'
+import Home from './routes/home.tsx'
+import Login from './routes/login.tsx'
+import Signup from './routes/signup.tsx'
+import AdminDash from './routes/admin/admin-dash.tsx'
+import StudentProfileSetup from './routes/student/student-profile-setup.tsx'
+import ProjectForm from './routes/business/business-job-form.tsx'
+import InboxPage from './routes/student/student-inbox.tsx'
+import JobDetailsPage from './routes/student/student-inbox-item.tsx'
+import About from './routes/about.tsx'
+
+// import { Ory } from "@ory/client";
+
+// export const ory = new OryKratosClient({
+//   basePath: "http://localhost:4433", // Adjust if using Ory Cloud
+// });
+
+
+
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <BrowserRouter>
+      <Routes>
+        {/* Regular Pages */}
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+
+        {/* AUTH */}
+        <Route path="login" element={<Login />} />
+        <Route path="signup" element={<Signup />} />
+
+        {/* Student Specific Pages */}
+        <Route path="/student">
+          <Route path="profile-setup" element={<StudentProfileSetup />} />
+          <Route path="inbox" element={<InboxPage />} />
+          <Route path="inbox/:jobId" element={<JobDetailsPage />} />
+
+        </Route>
+
+        {/* Business Specific Pages */}
+        <Route path="business">
+          <Route path="job-form" element={<ProjectForm />} />
+          <Route path="profile-setup" element={<ProjectForm />} />
+        </Route>
+
+        {/* Admin Specific Pages */}
+        <Route path="admin">
+          <Route path="dash" element={<AdminDash />} />
+        </Route>
+
+      </Routes>
+    </BrowserRouter>
+  </StrictMode>,
+)
