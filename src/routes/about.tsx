@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Facebook, Twitter, Linkedin, Instagram, ArrowRight } from "lucide-react"
 import { Link } from "react-router"
+import DC_ICON from "../assets/DC_Logo.svg";
 
 export default function About() {
     const steps = [
@@ -28,8 +29,8 @@ export default function About() {
     return (
         <main className="min-h-screen">
             {/* Hero Section */}
-            <section className="bg-black text-white">
-                <div className="container mx-auto px-4 py-16">
+            <section className="bg-gradient-to-tr from-green-600 to-yellow-400-600 text-white flex ">
+                <div className="container mx-2 mr-auto px-4 py-16">
                     <h1 className="text-5xl md:text-6xl font-bold mb-4">
                         About
                         <br />
@@ -57,6 +58,7 @@ export default function About() {
                         </div>
                     </div>
                 </div>
+                <img src={DC_ICON} alt="" className="hidden sm:block md:w-1/2 w-1/3" />
             </section>
 
             {/* How it Works Section */}
@@ -65,7 +67,7 @@ export default function About() {
                     <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">How does it work?</h2>
                     <div className="grid md:grid-cols-3 gap-8">
                         {steps.map((step) => (
-                            <Card key={step.number} className="bg-black text-white">
+                            <Card key={step.number} className="bg-slate-700 border-gray-300 border-4 text-white">
                                 <CardContent className="p-8">
                                     <div className="text-4xl font-bold mb-6">{step.number}</div>
                                     <h3 className="text-2xl font-semibold mb-4">{step.title}</h3>

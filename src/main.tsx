@@ -2,6 +2,7 @@ import { lazy, StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { BrowserRouter, Route, Routes } from 'react-router'
+const NavLayout = lazy(() => import('./routes/NavLayout.tsx'))
 const Home = lazy(() => import('./routes/home.tsx'))
 const Login = lazy(() => import('./routes/login.tsx'))
 const Signup = lazy(() => import('./routes/signup.tsx'))
@@ -12,31 +13,31 @@ const InboxPage = lazy(() => import('./routes/student/student-inbox.tsx'))
 const JobDetailsPage = lazy(() => import('./routes/student/student-inbox-item.tsx'))
 const About = lazy(() => import('./routes/about.tsx'))
 
-// import { Ory } from "@ory/client";
-
-// export const ory = new OryKratosClient({
-//   basePath: "http://localhost:4433", // Adjust if using Ory Cloud
-// });
-
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        {/* Regular Pages */}
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
+        {/* Pages that have the Navigation Bar */}
+        <Route element={<NavLayout />}>
+
+          {/* Regular Pages */}
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+
+          {/* Student Specific Pages */}
+          <Route path="/student">
+            <Route path="profile-setup" element={<StudentProfileSetup />} />
+            <Route path="inbox" element={<InboxPage />} />
+            <Route path="inbox/:jobId" element={<JobDetailsPage />} />
+
+          </Route>
+        </Route>
 
         {/* AUTH */}
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<Signup />} />
 
-        {/* Student Specific Pages */}
-        <Route path="/student">
-          <Route path="profile-setup" element={<StudentProfileSetup />} />
-          <Route path="inbox" element={<InboxPage />} />
-          <Route path="inbox/:jobId" element={<JobDetailsPage />} />
 
-        </Route>
 
         {/* Business Specific Pages */}
         <Route path="business">

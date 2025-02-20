@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowRight, Code, Briefcase, GraduationCap, Clock, DollarSign, Users } from "lucide-react"
+import { Code, Briefcase, GraduationCap, Clock, DollarSign, Users } from "lucide-react"
 import { Link } from "react-router";
 
 // // eslint-disable-next-line no-empty-pattern
@@ -15,28 +15,6 @@ export default function Home() {
   return (
 
     <div className="flex flex-col min-h-screen">
-      <header className="bg-white shadow-sm">
-        <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link to="/" className="text-2xl font-bold text-blue-600">
-            DevConnect
-          </Link>
-          <div className="space-x-4">
-            <Link to="#why-companies-should-care" className="text-gray-600 hover:text-blue-600">
-              For Companies
-            </Link>
-            <Link to="#why-students-should-care" className="text-gray-600 hover:text-blue-600">
-              For Students
-            </Link>
-            <Link to="/about" className="text-gray-600 hover:text-blue-600">
-              About Us
-            </Link>
-            <Link to="/signup" className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
-              Sign Up
-            </Link>
-          </div>
-        </nav>
-      </header>
-
       <main className="flex-grow">
         <section className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-20">
           <div className="container mx-auto px-4 text-center">
@@ -46,17 +24,17 @@ export default function Home() {
             <p className="text-xl mb-8">
               Gain experience, earn money, and build your portfolio while helping businesses grow
             </p>
-            <Link
+            {/* <Link
               to="#"
               className="bg-white text-blue-600 px-6 py-3 rounded-md text-lg font-semibold hover:bg-gray-100 inline-flex items-center"
             >
               Get Started
               <ArrowRight className="ml-2" />
-            </Link>
+            </Link> */}
           </div>
         </section>
 
-        <section className="py-16 bg-gray-50" id="what-we-do">
+        <section className="pt-6 pb-12 bg-gray-50" id="what-we-do">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">What We Do</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -179,90 +157,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-
-      <footer className="bg-gray-800 text-white py-8">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="text-lg font-semibold mb-4">DevConnect</h3>
-              <p className="text-sm">Connecting student developers with businesses for mutual growth and success.</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link to="#" className="text-sm hover:text-blue-400">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#" className="text-sm hover:text-blue-400">
-                    For Companies
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#" className="text-sm hover:text-blue-400">
-                    For Students
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#" className="text-sm hover:text-blue-400">
-                    About Us
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Legal</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link to="#" className="text-sm hover:text-blue-400">
-                    Terms of Service
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#" className="text-sm hover:text-blue-400">
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#" className="text-sm hover:text-blue-400">
-                    Cookie Policy
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Connect</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link to="#" className="text-sm hover:text-blue-400">
-                    Facebook
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#" className="text-sm hover:text-blue-400">
-                    Twitter
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#" className="text-sm hover:text-blue-400">
-                    LinkedIn
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#" className="text-sm hover:text-blue-400">
-                    Instagram
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="mt-8 pt-8 border-t border-gray-700 text-center">
-            <p className="text-sm">&copy; {new Date().getFullYear()} DevConnect. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }
