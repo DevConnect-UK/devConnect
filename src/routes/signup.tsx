@@ -35,18 +35,20 @@ export default function Signup() {
   const [isSubmitting, setIsSubmitting] = useState(false)
 
   const onStudentSubmit = async (data: StudentFormData) => {
-    setIsSubmitting(true)
+    // setIsSubmitting(true)
     // Here you would typically send the data to your API
     console.log("Student data:", data)
+    console.log("API URL:", API_URL);
     // Simulate API call
     // await new Promise((resolve) => setTimeout(resolve, 1000))
 
-    const res = await fetch(API_URL + "/v1/auth/signup_student", {
-      body: JSON.stringify(data),
+    const res = await fetch(API_URL + "/auth/signup_student", {
       headers: {
         "Content-Type": "application/json",
       },
       method: "POST",
+      mode: "cors",
+      body: JSON.stringify(data),
     })
     console.log(res);
 
@@ -74,6 +76,16 @@ export default function Signup() {
     // Here you would typically send the data to your API
     console.log("Business data:", data)
     // Simulate API call
+    const res = await fetch(API_URL + "/auth/signup_business", {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+
+    console.log(res);
     await new Promise((resolve) => setTimeout(resolve, 1000))
     setIsSubmitting(false)
     // Handle response, redirect, etc.
@@ -118,6 +130,7 @@ export default function Signup() {
                   <input
                     id="firstName"
                     type="text"
+                    defaultValue="test"
                     {...studentForm.register("firstName", { required: "First name is required" })}
                     className="appearance-none text-gray-900 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   />
@@ -135,6 +148,7 @@ export default function Signup() {
                   <input
                     id="lastName"
                     type="text"
+                    defaultValue="test"
                     {...studentForm.register("lastName", { required: "Last name is required" })}
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   />
@@ -152,6 +166,7 @@ export default function Signup() {
                   <input
                     id="email"
                     type="email"
+                    defaultValue="test@test.com"
                     {...studentForm.register("email", {
                       required: "Email is required",
                       pattern: {
@@ -175,6 +190,7 @@ export default function Signup() {
                   <input
                     id="password"
                     type="password"
+                    defaultValue={"123456789"}
                     {...studentForm.register("password", {
                       required: "Password is required",
                       minLength: {

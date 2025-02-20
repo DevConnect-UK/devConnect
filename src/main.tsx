@@ -12,12 +12,6 @@ const InboxPage = lazy(() => import('./routes/student/student-inbox.tsx'))
 const JobDetailsPage = lazy(() => import('./routes/student/student-inbox-item.tsx'))
 const About = lazy(() => import('./routes/about.tsx'))
 
-// import { Ory } from "@ory/client";
-
-// export const ory = new OryKratosClient({
-//   basePath: "http://localhost:4433", // Adjust if using Ory Cloud
-// });
-
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
