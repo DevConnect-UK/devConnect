@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { Link, useNavigate, useSearchParams } from "react-router"
-
+const API_URL = import.meta.env.VITE_API_URL;
 type StudentFormData = {
   firstName: string
   lastName: string
@@ -21,6 +21,7 @@ type BusinessFormData = {
 export default function Signup() {
   const navigate = useNavigate();
 
+  console.log(API_URL);
   const [searchParams] = useSearchParams();
 
   // Get the type from URL and default to "student" if not provided
@@ -39,7 +40,8 @@ export default function Signup() {
     console.log("Student data:", data)
     // Simulate API call
     // await new Promise((resolve) => setTimeout(resolve, 1000))
-    const res = await fetch("http://localhost:5000/signup", {
+
+    const res = await fetch(API_URL + "/v1/auth/signup_student", {
       body: JSON.stringify(data),
       headers: {
         "Content-Type": "application/json",
@@ -47,6 +49,20 @@ export default function Signup() {
       method: "POST",
     })
     console.log(res);
+
+    if (!res.ok) {
+      const error = await res.json()
+      console.error(error)
+      alert(error.message)
+      setIsSubmitting(false)
+      studentForm.setError("email", {
+        type: "manual",
+        message: "Email already exists",
+      })
+      return
+    }
+
+    // TODO handle other errors
 
     setIsSubmitting(false)
     // Handle response, redirect, etc.
