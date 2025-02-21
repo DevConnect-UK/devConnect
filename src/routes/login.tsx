@@ -1,8 +1,8 @@
-"use client"
-
+import { Eye, EyeOff } from "lucide-react";
 import { useState } from "react"
 import { useForm } from "react-hook-form"
-import { Link } from "react-router"
+import { Link, useNavigate } from "react-router"
+const API_URL = import.meta.env.VITE_API_URL;
 
 type LoginFormData = {
     email: string
@@ -10,21 +10,40 @@ type LoginFormData = {
 }
 
 export default function Login() {
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-    } = useForm<LoginFormData>()
+    const navigate = useNavigate();
+
+    const LoginForm = useForm<LoginFormData>()
     const [isSubmitting, setIsSubmitting] = useState(false)
+    const [showPassword, setShowPassword] = useState(false)
 
     const onSubmit = async (data: LoginFormData) => {
         setIsSubmitting(true)
         // Here you would typically send the data to your API
         console.log("Login data:", data)
         // Simulate API call
-        await new Promise((resolve) => setTimeout(resolve, 1000))
+        const res = await fetch(API_URL + "/auth/login", {
+            method: 'POST',
+            mode: "cors",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+
+        if (!res.ok) {
+            const error = await res.json()
+            console.error(error)
+            LoginForm.setError("email", error.message);
+            setIsSubmitting(false)
+            return
+        }
+        const json = await res.json();
+        localStorage.setItem('token', json.token);
+        localStorage.setItem('userType', json.role);
+        console.log(json);
         setIsSubmitting(false)
         // Handle response, redirect, etc.
+        navigate("/student/inbox")
     }
 
     return (
@@ -35,7 +54,7 @@ export default function Login() {
 
             <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
                 <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-                    <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
+                    <form className="space-y-6" onSubmit={LoginForm.handleSubmit(onSubmit)}>
                         <div>
                             <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                                 Email address
@@ -45,7 +64,7 @@ export default function Login() {
                                     id="email"
                                     type="email"
                                     autoComplete="email"
-                                    {...register("email", {
+                                    {...LoginForm.register("email", {
                                         required: "Email is required",
                                         pattern: {
                                             value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -54,7 +73,7 @@ export default function Login() {
                                     })}
                                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                 />
-                                {errors.email && <p className="mt-2 text-sm text-red-600">{errors.email.message}</p>}
+                                {LoginForm.formState.errors.email && <p className="mt-2 text-sm text-red-600">{LoginForm.formState.errors.email.message}</p>}
                             </div>
                         </div>
 
@@ -63,14 +82,27 @@ export default function Login() {
                                 Password
                             </label>
                             <div className="mt-1">
-                                <input
-                                    id="password"
-                                    type="password"
-                                    autoComplete="current-password"
-                                    {...register("password", { required: "Password is required" })}
-                                    className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                                />
-                                {errors.password && <p className="mt-2 text-sm text-red-600">{errors.password.message}</p>}
+                                <div className="relative">
+                                    <input
+                                        id="password"
+                                        type={showPassword ? "text" : "password"}
+                                        autoComplete="current-password"
+                                        {...LoginForm.register("password", { required: "Password is required" })}
+                                        className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                    />
+                                    <button
+                                        type="button"
+                                        className="absolute inset-y-0 right-0 flex items-center px-3 text-gray-400"
+                                        onClick={() => setShowPassword((prev) => !prev)}
+                                    >
+                                        {showPassword ? (
+                                            <EyeOff />
+                                        ) : (
+                                            <Eye />
+                                        )}
+                                    </button>
+                                </div>
+                                {LoginForm.formState.errors.password && <p className="mt-2 text-sm text-red-600">{LoginForm.formState.errors.password.message}</p>}
                             </div>
                         </div>
 

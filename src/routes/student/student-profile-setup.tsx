@@ -33,25 +33,42 @@ export default function StudentProfileSetup() {
     const {
         register,
         handleSubmit,
-        watch,
+        // watch,
         formState: { errors },
     } = useForm<ProfileFormData>()
     const [isSubmitting, setIsSubmitting] = useState(false)
 
-    const watchAreasOfWork = watch("areasOfWork", [])
-    const watchSkills = watch("skills", [])
+    // const watchAreasOfWork = watch("areasOfWork", [])
+    // const watchSkills = watch("skills", [])
 
     const onSubmit: SubmitHandler<ProfileFormData> = async (data) => {
         setIsSubmitting(true)
         // Here you would typically send the data to your API
         console.log("Profile data:", data)
-        // Simulate API call
-        await new Promise((resolve) => setTimeout(resolve, 1000))
+
+        const response = await fetch(process.env.API_URL + "/auth/signup_student", {
+            method: "POST",
+            mode: "cors",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        });
+
+        if (!response.ok) {
+            const error = await response.json();
+            console.error(error);
+            setIsSubmitting(false);
+            return;
+        }
+
+        const json = await response.json();
+        console.log(json);
+        setTimeout(() => navigate("/student/inbox"), 3000);
+
         setIsSubmitting(false)
         // Handle response, redirect, etc.
-        alert("Profile created successfully!")
 
-        console.log(watchAreasOfWork, watchSkills);
 
         navigate("/")
     }

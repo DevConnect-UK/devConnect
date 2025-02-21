@@ -35,7 +35,7 @@ export default function Signup() {
   const [isSubmitting, setIsSubmitting] = useState(false)
 
   const onStudentSubmit = async (data: StudentFormData) => {
-    // setIsSubmitting(true)
+    // // setIsSubmitting(true)
     // Here you would typically send the data to your API
     console.log("Student data:", data)
     console.log("API URL:", API_URL);
@@ -43,12 +43,12 @@ export default function Signup() {
     // await new Promise((resolve) => setTimeout(resolve, 1000))
 
     const res = await fetch(API_URL + "/auth/signup_student", {
-      headers: {
-        "Content-Type": "application/json",
-      },
-      method: "POST",
+      method: 'POST',
       mode: "cors",
-      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
     })
     console.log(res);
 
@@ -301,7 +301,7 @@ export default function Signup() {
               <div>
                 <button
                   type="submit"
-                  disabled={isSubmitting}
+                  // disabled={isSubmitting}
                   className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                 >
                   {isSubmitting ? "Signing up..." : "Sign up as Business"}
