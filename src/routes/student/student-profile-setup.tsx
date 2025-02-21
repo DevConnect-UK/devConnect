@@ -50,6 +50,7 @@ export default function StudentProfileSetup() {
         const response = await fetch(API_URL + "/student/profile", {
             method: "POST",
             mode: "cors",
+            credentials: "include",
             headers: {
                 "Content-Type": "application/json",
             },
