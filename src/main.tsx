@@ -2,6 +2,10 @@ import { lazy, StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { BrowserRouter, Route, Routes } from 'react-router'
+import PricingPage from './routes/pricing.tsx'
+import NewProjectPage from './routes/business/projects/new-project-page.tsx'
+import ProjectsPage from './routes/business/projects/projects.tsx'
+import ProjectDetailsPage from './routes/business/projects/projects-item.tsx'
 const NavLayout = lazy(() => import('./routes/NavLayout.tsx'))
 const Home = lazy(() => import('./routes/home.tsx'))
 const Login = lazy(() => import('./routes/login.tsx'))
@@ -23,7 +27,7 @@ createRoot(document.getElementById('root')!).render(
           {/* Regular Pages */}
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
-
+          <Route path="/pricing" element={<PricingPage />} />
           {/* Student Specific Pages */}
           <Route path="/student">
             <Route path="profile-setup" element={<StudentProfileSetup />} />
@@ -41,8 +45,13 @@ createRoot(document.getElementById('root')!).render(
 
         {/* Business Specific Pages */}
         <Route path="business">
-          <Route path="job-form" element={<ProjectForm />} />
+          <Route path="projects">
+            <Route index element={<ProjectsPage />} />
+            <Route path=':id' element={<ProjectDetailsPage />} />
+            <Route path="new" element={<NewProjectPage />} />
+          </Route>
           <Route path="profile-setup" element={<ProjectForm />} />
+
         </Route>
 
         {/* Admin Specific Pages */}

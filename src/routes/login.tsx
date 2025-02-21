@@ -1,3 +1,4 @@
+import { UserType } from "@/lib/sharedTypes";
 import { Eye, EyeOff } from "lucide-react";
 import { useState } from "react"
 import { useForm } from "react-hook-form"
@@ -39,11 +40,29 @@ export default function Login() {
         }
         const json = await res.json();
         localStorage.setItem('token', json.token);
+        const role: UserType = json.role;
         localStorage.setItem('userType', json.role);
         console.log(json);
         setIsSubmitting(false)
         // Handle response, redirect, etc.
-        navigate("/student/inbox")
+
+        switch (role) {
+            case UserType.Student:
+                navigate("/student/inbox");
+                break;
+            case UserType.Admin:
+                navigate("/admin/dash");
+                break;
+
+            case UserType.Business:
+                navigate("/business/projects");
+                break;
+
+            default:
+                console.error("Unknown role");
+                navigate("/404");
+                break;
+        }
     }
 
     return (
