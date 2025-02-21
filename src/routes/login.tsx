@@ -41,7 +41,7 @@ export default function Login() {
         const json = await res.json();
         localStorage.setItem('token', json.token);
         const role: UserType = json.role;
-        localStorage.setItem('userType', json.role);
+        localStorage.setItem('userType', role);
         console.log(json);
         setIsSubmitting(false)
         // Handle response, redirect, etc.
