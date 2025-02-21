@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Facebook, Twitter, Linkedin, Instagram, ArrowRight } from "lucide-react"
+import { Twitter, Linkedin, Instagram, ArrowRight, Youtube } from "lucide-react"
 import { Link } from "react-router"
 import DC_ICON from "../assets/DC_Logo.svg";
 
@@ -43,16 +43,16 @@ export default function About() {
                             real-world experience while earning money? DevConnect chltm.tech is your bridge to innovation.
                         </p>
                         <div className="flex gap-4">
-                            <Link to="#" className="hover:text-primary">
-                                <Facebook className="h-6 w-6" />
+                            <Link to="https://www.youtube.com/@DevConnect-f5e" target="_blank" className="hover:text-primary">
+                                <Youtube className="h-6 w-6" />
                             </Link>
-                            <Link to="#" className="hover:text-primary">
+                            <Link to="https://x.com/chltmtechboot" target="_blank" className="hover:text-primary">
                                 <Twitter className="h-6 w-6" />
                             </Link>
-                            <Link to="#" className="hover:text-primary">
+                            <Link to="https://www.linkedin.com/company/chltm-tech/" target="_blank" className="hover:text-primary">
                                 <Linkedin className="h-6 w-6" />
                             </Link>
-                            <Link to="#" className="hover:text-primary">
+                            <Link to="https://www.instagram.com/devconnectuk/" target="_blank" className="hover:text-primary">
                                 <Instagram className="h-6 w-6" />
                             </Link>
                         </div>

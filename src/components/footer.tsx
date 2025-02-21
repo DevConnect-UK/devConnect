@@ -58,8 +58,8 @@ export function Footer() {
                         <h3 className="text-lg font-semibold mb-4">Connect</h3>
                         <ul className="space-y-2">
                             <li>
-                                <Link to="#" className="text-sm hover:text-blue-400">
-                                    Facebook
+                                <Link to="https://www.youtube.com/@DevConnect-f5e" target="_blank" className="text-sm hover:text-blue-400">
+                                    Youtube
                                 </Link>
                             </li>
                             <li>
@@ -68,12 +68,12 @@ export function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="#" className="text-sm hover:text-blue-400">
+                                <Link to="https://www.linkedin.com/company/chltm-tech/" target="_blank" className="text-sm hover:text-blue-400">
                                     LinkedIn
                                 </Link>
                             </li>
                             <li>
-                                <Link to="#" className="text-sm hover:text-blue-400">
+                                <Link to="https://www.instagram.com/devconnectuk/" target="_blank" className="text-sm hover:text-blue-400">
                                     Instagram
                                 </Link>
                             </li>

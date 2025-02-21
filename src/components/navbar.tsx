@@ -64,12 +64,9 @@ export function NavBar() {
                     <img src={DC_ICON} className="h-16" alt="DC Icon" />
                 </Link>
                 <div className="space-x-4">
-                    {/* <Link to="/#why-companies-should-care" className="text-gray-600 hover:text-blue-600">
-                        For Companies
+                    <Link to="/pricing" className="text-gray-600 hover:text-blue-600">
+                        Pricing
                     </Link>
-                    <Link to="/#why-students-should-care" className="text-gray-600 hover:text-blue-600">
-                        For Students
-                    </Link> */}
                     <Link to="/about" className="text-gray-600 hover:text-blue-600">
                         About Us
                     </Link>
