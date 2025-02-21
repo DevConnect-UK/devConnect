@@ -28,9 +28,14 @@ export function NavBar() {
             break;
         case UserType.Business:
             links = (
-                <Link to="/business/job-form" className="text-gray-600 hover:text-blue-600">
-                    Post a Job
-                </Link>
+                <>
+                    <Link to="/business/projects/new" className="text-gray-600 hover:text-blue-600">
+                        create a project
+                    </Link>
+                    <Link to="/business/projects/new" className="text-gray-600 hover:text-blue-600">
+                        My Projects
+                    </Link>
+                </>
             );
             break;
         case UserType.Student:

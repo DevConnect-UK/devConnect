@@ -140,16 +140,16 @@ export default function Home() {
             <p className="text-xl mb-8">
               Join our platform today and start your journey in professional web development.
             </p>
-            <div className="space-x-4">
+            <div className="md:space-x-4 flex flex-col md:flex-row">
               <Link
                 to="/signup?type=student"
-                className="bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-blue-700"
+                className="bg-blue-600 text-white px-6 py-3 my-2 rounded-md text-lg font-semibold hover:bg-blue-700"
               >
                 Sign Up as a Student
               </Link>
               <Link
                 to="/signup?type=business"
-                className="bg-green-600 text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-green-700"
+                className="bg-green-600 text-white px-6 py-3 my-2 rounded-md text-lg font-semibold hover:bg-green-700"
               >
                 Sign Up as a Business
               </Link>
