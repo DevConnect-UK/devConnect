@@ -42,24 +42,26 @@ createRoot(document.getElementById('root')!).render(
             <Route path="profile-setup" element={<StudentProfileSetup />} />
             <Route path="inbox" element={<InboxPage />} />
             <Route path="inbox/:jobId" element={<JobDetailsPage />} />
-
           </Route>
+
+          {/* Business Specific Pages */}
+          <Route path="business">
+
+            <Route path="projects">
+              <Route index element={<ProjectsPage />} />
+              <Route path=':id' element={<ProjectDetailsPage />} />
+              <Route path="new" element={<NewProjectPage />} />
+            </Route>
+
+            <Route path="profile-setup" element={<ProjectForm />} />
+          </Route>
+
         </Route>
 
         {/* AUTH */}
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<Signup />} />
 
-        {/* Business Specific Pages */}
-        <Route path="business">
-          <Route path="projects">
-            <Route index element={<ProjectsPage />} />
-            <Route path=':id' element={<ProjectDetailsPage />} />
-            <Route path="new" element={<NewProjectPage />} />
-          </Route>
-          <Route path="profile-setup" element={<ProjectForm />} />
-
-        </Route>
 
         {/* Admin Specific Pages */}
         <Route path="admin">

@@ -1,9 +1,10 @@
-"use client"
-
 import { useState } from "react"
 import { useForm, type SubmitHandler } from "react-hook-form"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { useNavigate } from "react-router"
+
+const API_URL = import.meta.env.VITE_API_URL;
+
 
 type ProfileFormData = {
     areasOfWork: string[]
@@ -46,7 +47,7 @@ export default function StudentProfileSetup() {
         // Here you would typically send the data to your API
         console.log("Profile data:", data)
 
-        const response = await fetch(process.env.API_URL + "/auth/signup_student", {
+        const response = await fetch(API_URL + "/student/profile", {
             method: "POST",
             mode: "cors",
             headers: {

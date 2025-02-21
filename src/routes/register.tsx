@@ -101,7 +101,7 @@ export default function Signup() {
     console.log(res);
     setIsSubmitting(false)
 
-
+    navigate("/business/projects");
     // Handle response, redirect, etc.
   }
 
