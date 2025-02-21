@@ -85,9 +85,22 @@ export default function Signup() {
       body: JSON.stringify(data),
     })
 
+    if (!res.ok) {
+      const error = await res.json()
+      console.error(error)
+      alert(error.message)
+      setIsSubmitting(false)
+      businessForm.setError("email", {
+        type: "manual",
+        message: "Email already has an account or is not allowed",
+      })
+      return
+    }
+
     console.log(res);
-    await new Promise((resolve) => setTimeout(resolve, 1000))
     setIsSubmitting(false)
+
+
     // Handle response, redirect, etc.
   }
 
@@ -130,7 +143,6 @@ export default function Signup() {
                   <input
                     id="firstName"
                     type="text"
-                    defaultValue="test"
                     {...studentForm.register("firstName", { required: "First name is required" })}
                     className="appearance-none text-gray-900 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   />
@@ -148,7 +160,6 @@ export default function Signup() {
                   <input
                     id="lastName"
                     type="text"
-                    defaultValue="test"
                     {...studentForm.register("lastName", { required: "Last name is required" })}
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   />
@@ -166,7 +177,6 @@ export default function Signup() {
                   <input
                     id="email"
                     type="email"
-                    defaultValue="test@test.com"
                     {...studentForm.register("email", {
                       required: "Email is required",
                       pattern: {
@@ -190,7 +200,6 @@ export default function Signup() {
                   <input
                     id="password"
                     type="password"
-                    defaultValue={"123456789"}
                     {...studentForm.register("password", {
                       required: "Password is required",
                       minLength: {

@@ -49,7 +49,7 @@ export function NavBar() {
                 <>
                     <Link to="/signup" className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700" >
                         Sign Up
-                    </Link >
+                    </Link>
                     <Link to="/login" className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
                         login
                     </Link>

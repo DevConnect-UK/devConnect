@@ -53,7 +53,6 @@ export default function Login() {
             case UserType.Admin:
                 navigate("/admin/dash");
                 break;
-
             case UserType.Business:
                 navigate("/business/projects");
                 break;

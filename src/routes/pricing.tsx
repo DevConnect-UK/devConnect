@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function PricingPage() {
@@ -120,11 +119,6 @@ export default function PricingPage() {
             Contact us for detailed quotes and custom project scopes.
           </p>
 
-          <div className="flex justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8">
-              Sign Up as a Business
-            </Button>
-          </div>
         </div>
       </div>
     </div>

@@ -10,10 +10,10 @@ import CookiesPage from './routes/policyPages/cookiePolicy.tsx'
 import TermsPage from './routes/policyPages/termsOfService.tsx'
 import PrivacyPage from './routes/policyPages/privacyPolicy.tsx'
 import FAQPage from './routes/faqs.tsx'
-const NavLayout = lazy(() => import('./routes/NavLayout.tsx'))
+const NavLayout = lazy(() => import('./NavLayout.tsx'))
 const Home = lazy(() => import('./routes/home.tsx'))
 const Login = lazy(() => import('./routes/login.tsx'))
-const Signup = lazy(() => import('./routes/signup.tsx'))
+const Signup = lazy(() => import('./routes/register.tsx'))
 const AdminDash = lazy(() => import('./routes/admin/admin-dash.tsx'))
 const StudentProfileSetup = lazy(() => import('./routes/student/student-profile-setup.tsx'))
 const ProjectForm = lazy(() => import('./routes/business/business-job-form.tsx'))
