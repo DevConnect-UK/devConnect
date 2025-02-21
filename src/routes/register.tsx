@@ -1,5 +1,6 @@
 "use client"
 
+import { X } from "lucide-react";
 import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { Link, useNavigate, useSearchParams } from "react-router"
@@ -106,6 +107,9 @@ export default function Signup() {
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+      <Link to="/" className="absolute right-4 top-4 p-2 rounded-full hover:bg-slate-100 transition-colors">
+        <X className="w-6 h-6" />
+      </Link>
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Sign Up for DevConnect</h2>
       </div>

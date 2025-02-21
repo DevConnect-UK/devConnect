@@ -37,7 +37,6 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/terms-of-service" element={<TermsPage />} />
           <Route path="/privacy-policy" element={<PrivacyPage />} />
 
-
           {/* Student Specific Pages */}
           <Route path="/student">
             <Route path="profile-setup" element={<StudentProfileSetup />} />
@@ -50,8 +49,6 @@ createRoot(document.getElementById('root')!).render(
         {/* AUTH */}
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<Signup />} />
-
-
 
         {/* Business Specific Pages */}
         <Route path="business">

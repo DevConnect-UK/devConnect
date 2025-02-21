@@ -1,5 +1,5 @@
 import { UserType } from "@/lib/sharedTypes";
-import { Eye, EyeOff } from "lucide-react";
+import { Eye, EyeOff, X } from "lucide-react";
 import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { Link, useNavigate } from "react-router"
@@ -66,6 +66,9 @@ export default function Login() {
 
     return (
         <div className="min-h-screen bg-gray-100 text-gray-800 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+            <Link to="/" className="absolute right-4 top-4 p-2 rounded-full hover:bg-slate-100 transition-colors">
+                <X className="w-6 h-6" />
+            </Link>
             <div className="sm:mx-auto sm:w-full sm:max-w-md">
                 <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Sign in to your account</h2>
             </div>
