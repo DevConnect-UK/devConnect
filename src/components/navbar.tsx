@@ -70,6 +70,9 @@ export function NavBar() {
                     <Link to="/about" className="text-gray-600 hover:text-blue-600">
                         About Us
                     </Link>
+                    <Link to="/faq" className="text-gray-600 hover:text-blue-600">
+                        FAQ
+                    </Link>
                     {
                         links
                     }

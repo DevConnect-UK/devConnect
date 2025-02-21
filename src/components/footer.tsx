@@ -32,23 +32,28 @@ export function Footer() {
                                     About Us
                                 </Link>
                             </li>
+                            <li>
+                                <Link to="/faq" className="text-sm hover:text-blue-400">
+                                    Frequently Asked Questions
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Legal</h3>
                         <ul className="space-y-2">
                             <li>
-                                <Link to="#" className="text-sm hover:text-blue-400">
+                                <Link to="/terms-of-service" className="text-sm hover:text-blue-400">
                                     Terms of Service
                                 </Link>
                             </li>
                             <li>
-                                <Link to="#" className="text-sm hover:text-blue-400">
+                                <Link to="/privacy-policy" className="text-sm hover:text-blue-400">
                                     Privacy Policy
                                 </Link>
                             </li>
                             <li>
-                                <Link to="#" className="text-sm hover:text-blue-400">
+                                <Link to="/cookie-policy" className="text-sm hover:text-blue-400">
                                     Cookie Policy
                                 </Link>
                             </li>
