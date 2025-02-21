@@ -1,5 +1,6 @@
 "use client"
 
+import { UserType } from "@/lib/sharedTypes";
 import { X } from "lucide-react";
 import { useState } from "react"
 import { useForm } from "react-hook-form"
@@ -65,6 +66,11 @@ export default function Signup() {
       return
     }
 
+    const json = await res.json();
+    localStorage.setItem('token', json.token);
+    const role: UserType = json.role;
+    localStorage.setItem('userType', role);
+    console.log(json);
     // TODO handle other errors
 
     setIsSubmitting(false)
@@ -98,7 +104,12 @@ export default function Signup() {
       return
     }
 
-    console.log(res);
+    const json = await res.json();
+    localStorage.setItem('token', json.token);
+    const role: UserType = json.role;
+    localStorage.setItem('userType', role);
+
+    console.log(json);
     setIsSubmitting(false)
 
     navigate("/business/projects");

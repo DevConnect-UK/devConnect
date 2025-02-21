@@ -32,7 +32,7 @@ export function NavBar() {
                     <Link to="/business/projects/new" className="text-gray-600 hover:text-blue-600">
                         create a project
                     </Link>
-                    <Link to="/business/projects/new" className="text-gray-600 hover:text-blue-600">
+                    <Link to="/business/projects" className="text-gray-600 hover:text-blue-600">
                         My Projects
                     </Link>
                 </>
