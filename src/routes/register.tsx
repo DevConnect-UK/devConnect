@@ -1,5 +1,7 @@
 "use client"
 
+import { UserType } from "@/lib/sharedTypes";
+import { X } from "lucide-react";
 import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { Link, useNavigate, useSearchParams } from "react-router"
@@ -35,9 +37,10 @@ export default function Signup() {
   const [isSubmitting, setIsSubmitting] = useState(false)
 
   const onStudentSubmit = async (data: StudentFormData) => {
-    // setIsSubmitting(true)
+    // // setIsSubmitting(true)
     // Here you would typically send the data to your API
     console.log("Student data:", data)
+    console.log("API URL:", API_URL);
     // Simulate API call
     // await new Promise((resolve) => setTimeout(resolve, 1000))
 
@@ -63,6 +66,11 @@ export default function Signup() {
       return
     }
 
+    const json = await res.json();
+    localStorage.setItem('token', json.token);
+    const role: UserType = json.role;
+    localStorage.setItem('userType', role);
+    console.log(json);
     // TODO handle other errors
 
     setIsSubmitting(false)
@@ -75,13 +83,44 @@ export default function Signup() {
     // Here you would typically send the data to your API
     console.log("Business data:", data)
     // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+    const res = await fetch(API_URL + "/auth/signup_business", {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+
+    if (!res.ok) {
+      const error = await res.json()
+      console.error(error)
+      alert(error.message)
+      setIsSubmitting(false)
+      businessForm.setError("email", {
+        type: "manual",
+        message: "Email already has an account or is not allowed",
+      })
+      return
+    }
+
+    const json = await res.json();
+    localStorage.setItem('token', json.token);
+    const role: UserType = json.role;
+    localStorage.setItem('userType', role);
+
+    console.log(json);
     setIsSubmitting(false)
+
+    navigate("/business/projects");
     // Handle response, redirect, etc.
   }
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+      <Link to="/" className="absolute right-4 top-4 p-2 rounded-full hover:bg-slate-100 transition-colors">
+        <X className="w-6 h-6" />
+      </Link>
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Sign Up for DevConnect</h2>
       </div>

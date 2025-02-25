@@ -1,9 +1,10 @@
-"use client"
-
 import { useState } from "react"
 import { useForm, type SubmitHandler } from "react-hook-form"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { useNavigate } from "react-router"
+
+const API_URL = import.meta.env.VITE_API_URL;
+
 
 type ProfileFormData = {
     areasOfWork: string[]
@@ -42,13 +43,14 @@ export default function StudentProfileSetup() {
     // const watchSkills = watch("skills", [])
 
     const onSubmit: SubmitHandler<ProfileFormData> = async (data) => {
-        setIsSubmitting(true)
+        // setIsSubmitting(true)
         // Here you would typically send the data to your API
         console.log("Profile data:", data)
 
-        const response = await fetch(process.env.API_URL + "/auth/signup_student", {
+        const response = await fetch(API_URL + "/student/profile", {
             method: "POST",
             mode: "cors",
+            credentials: "include",
             headers: {
                 "Content-Type": "application/json",
             },
@@ -195,7 +197,7 @@ export default function StudentProfileSetup() {
                             {step === 3 && (
                                 <button
                                     type="submit"
-                                    disabled={isSubmitting}
+                                    // disabled={isSubmitting}
                                     className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                                 >
                                     {isSubmitting ? "Creating Profile..." : "Create Profile"}
