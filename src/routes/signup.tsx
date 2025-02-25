@@ -119,6 +119,7 @@ export default function Signup() {
                   <input
                     id="firstName"
                     type="text"
+                    autoComplete="given-name"
                     {...studentForm.register("firstName", { required: "First name is required" })}
                     className="appearance-none text-gray-900 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   />
@@ -136,6 +137,7 @@ export default function Signup() {
                   <input
                     id="lastName"
                     type="text"
+                    autoComplete="family-name"
                     {...studentForm.register("lastName", { required: "Last name is required" })}
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   />
@@ -153,6 +155,7 @@ export default function Signup() {
                   <input
                     id="email"
                     type="email"
+                    autoComplete="email"
                     {...studentForm.register("email", {
                       required: "Email is required",
                       pattern: {
@@ -176,6 +179,7 @@ export default function Signup() {
                   <input
                     id="password"
                     type="password"
+                    autoComplete="new-password"
                     {...studentForm.register("password", {
                       required: "Password is required",
                       minLength: {
@@ -199,6 +203,7 @@ export default function Signup() {
                   <input
                     id="dateOfBirth"
                     type="date"
+                    autoComplete="bday"
                     {...studentForm.register("dateOfBirth", { required: "Date of birth is required" })}
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   />
@@ -228,6 +233,7 @@ export default function Signup() {
                   <input
                     id="businessName"
                     type="text"
+                    autoComplete="organization"
                     {...businessForm.register("businessName", { required: "Business name is required" })}
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   />
@@ -245,6 +251,7 @@ export default function Signup() {
                   <input
                     id="email"
                     type="email"
+                    autoComplete="email"
                     {...businessForm.register("email", {
                       required: "Email is required",
                       pattern: {
@@ -268,6 +275,7 @@ export default function Signup() {
                   <input
                     id="password"
                     type="password"
+                    autoComplete="new-password"
                     {...businessForm.register("password", {
                       required: "Password is required",
                       minLength: {
