@@ -1,3 +1,12 @@
 User-agent: *
 Disallow: /api/
 Disallow: /static/
+Disallow: /admin/
+Disallow: /login
+Disallow: /signup
+Disallow: /student/inbox
+Disallow: /student/profile-setup
+Disallow: /business/profile-setup
+Disallow: /business/projects/new
+
+Sitemap: /sitemap.xml
