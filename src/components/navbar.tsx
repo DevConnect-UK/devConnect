@@ -67,7 +67,7 @@ export function NavBar() {
                 <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
                     {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
                 </button>
-                <div className={`md:flex space-x-4 hidden`}>
+                <div className={`md:flex items-center space-x-4 hidden`}>
                     <Link to="/pricing" className="text-gray-600 hover:text-blue-600">
                         Pricing
                     </Link>
