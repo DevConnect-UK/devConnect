@@ -25,5 +25,5 @@
         "noFallthroughCasesInSwitch": true,
         "noUncheckedSideEffectImports": true
     },
-    "include": ["src", "scripts/sitemap-builder.js"]
+    "include": ["src", "scripts/sitemap-builder.ts", "react-router.d.ts"]
 }

@@ -27,15 +27,13 @@ createRoot(document.getElementById('root')!).render(
       <Routes>
         {/* Pages that have the Navigation Bar */}
         <Route element={<NavLayout />}>
-
-          {/* Regular Pages */}
-          <Route path='' element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="pricing" element={<PricingPage />} />
-          <Route path="faq" element={<FAQPage />} />
-          <Route path="cookie-policy" element={<CookiesPage />} />
-          <Route path="terms-of-service" element={<TermsPage />} />
-          <Route path="privacy-policy" element={<PrivacyPage />} />
+          <Route path='/' element={<Home />} priority={1} />
+          <Route path="about" element={<About />} priority={0.8} />
+          <Route path="pricing" element={<PricingPage />} priority={0.7} />
+          <Route path="faq" element={<FAQPage />} priority={0.6} />
+          <Route path="cookie-policy" element={<CookiesPage />} priority={0.5} />
+          <Route path="terms-of-service" element={<TermsPage />} priority={0.4} />
+          <Route path="privacy-policy" element={<PrivacyPage />} priority={0.3} />
 
           {/* Student Specific Pages */}
           <Route path="student">
