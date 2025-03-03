@@ -3,163 +3,163 @@
   
     <url>
       <loc>https://devconnect.uk/</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
     </url>
     <url>
       <loc>https://devconnect.uk/about</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-    <url>
-      <loc>https://devconnect.uk/pricing</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.7</priority>
     </url>
     <url>
+      <loc>https://devconnect.uk/pricing</loc>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
       <loc>https://devconnect.uk/faq</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.6</priority>
     </url>
     <url>
       <loc>https://devconnect.uk/cookie-policy</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-    </url>
-    <url>
-      <loc>https://devconnect.uk/terms-of-service</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.4</priority>
-    </url>
-    <url>
-      <loc>https://devconnect.uk/privacy-policy</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.3</priority>
     </url>
     <url>
+      <loc>https://devconnect.uk/terms-of-service</loc>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.2</priority>
+    </url>
+    <url>
+      <loc>https://devconnect.uk/privacy-policy</loc>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.2</priority>
+    </url>
+    <url>
       <loc>https://devconnect.uk/student</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
       <loc>https://devconnect.uk/student/profile-setup</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
       <loc>https://devconnect.uk/student/inbox</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
       <loc>https://devconnect.uk/business</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
       <loc>https://devconnect.uk/business/projects</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
       <loc>https://devconnect.uk/business/projects/new</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
       <loc>https://devconnect.uk/business/profile-setup</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
       <loc>https://devconnect.uk/login</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
+      <priority>0.6</priority>
     </url>
     <url>
       <loc>https://devconnect.uk/signup</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
+      <priority>0.6</priority>
     </url>
     <url>
       <loc>https://devconnect.uk/admin</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
       <loc>https://devconnect.uk/admin/dash</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
+      <priority>0.1</priority>
     </url>
     <url>
       <loc>https://devconnect.uk/profile-setup</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
+      <priority>0.1</priority>
     </url>
     <url>
       <loc>https://devconnect.uk/inbox</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
       <loc>https://devconnect.uk/projects</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
       <loc>https://devconnect.uk/projects/new</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
       <loc>https://devconnect.uk/new</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
       <loc>https://devconnect.uk/dash</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
       <loc>https://devconnect.uk/projects/1</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
       <loc>https://devconnect.uk/projects/3</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
       <loc>https://devconnect.uk/projects/5</loc>
-      <lastmod>2025-03-03T15:17:00.956Z</lastmod>
+      <lastmod>2025-03-03T17:56:57.724Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
     </url>

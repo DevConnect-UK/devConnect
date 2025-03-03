@@ -8,15 +8,15 @@ import {
 const parsedRoutes = parseRoutesFromFile("src/main.tsx");
 
 // Step 2: Add overrides for certain routes' priorities
-const routePriorities = {
-    "/": 1,
-    "/about": 0.8,
-    "/pricing": 0.7,
-    "/faq": 0.6,
-    "/cookie-policy": 0.5,
-    "/terms-of-service": 0.4,
-    "/privacy-policy": 0.3,
-};
+// const routePriorities = {
+//     "/": 1,
+//     "/about": 0.8,
+//     "/pricing": 0.7,
+//     "/faq": 0.6,
+//     "/cookie-policy": 0.5,
+//     "/terms-of-service": 0.4,
+//     "/privacy-policy": 0.3,
+// };
 
 // parsedRoutes.staticRoutes = parsedRoutes.staticRoutes.map((route) => {
 //     if (route in routePriorities) {
