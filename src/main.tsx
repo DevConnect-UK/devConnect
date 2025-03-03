@@ -29,16 +29,16 @@ createRoot(document.getElementById('root')!).render(
         <Route element={<NavLayout />}>
 
           {/* Regular Pages */}
-          <Route path="/" element={<Home />} />
+          <Route element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="/pricing" element={<PricingPage />} />
-          <Route path="/faq" element={<FAQPage />} />
-          <Route path="/cookie-policy" element={<CookiesPage />} />
-          <Route path="/terms-of-service" element={<TermsPage />} />
-          <Route path="/privacy-policy" element={<PrivacyPage />} />
+          <Route path="pricing" element={<PricingPage />} />
+          <Route path="faq" element={<FAQPage />} />
+          <Route path="cookie-policy" element={<CookiesPage />} />
+          <Route path="terms-of-service" element={<TermsPage />} />
+          <Route path="privacy-policy" element={<PrivacyPage />} />
 
           {/* Student Specific Pages */}
-          <Route path="/student">
+          <Route path="student">
             <Route path="profile-setup" element={<StudentProfileSetup />} />
             <Route path="inbox" element={<InboxPage />} />
             <Route path="inbox/:jobId" element={<JobDetailsPage />} />

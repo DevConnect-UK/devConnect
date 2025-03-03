@@ -25,5 +25,5 @@
         "noFallthroughCasesInSwitch": true,
         "noUncheckedSideEffectImports": true
     },
-    "include": ["src"]
+    "include": ["src", "scripts/sitemap-builder.js"]
 }

@@ -1,21 +1,711 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>http://www.example.com/</loc>
-        <lastmod>2023-10-01</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>http://www.example.com/about</loc>
-        <lastmod>2023-10-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://www.example.com/contact</loc>
-        <lastmod>2023-10-01</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
-</urlset>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      
+        <url>
+          <loc>https://devconnect.uk/about</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/pricing</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/faq</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/cookie-policy</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/terms-of-service</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/privacy-policy</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/student</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/student/profile-setup</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/student/inbox</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/student/inbox/:jobId</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business/projects</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business/projects/:id</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business/projects/new</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business/profile-setup</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/login</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/signup</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/admin</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/admin/dash</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/about</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/pricing</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/faq</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/cookie-policy</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/terms-of-service</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/privacy-policy</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/student</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/student/profile-setup</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/student/inbox</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/student/inbox/:jobId</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business/projects</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business/projects/:id</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business/projects/new</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business/profile-setup</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/login</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/signup</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/admin</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/admin/dash</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/about</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/pricing</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/faq</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/cookie-policy</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/terms-of-service</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/privacy-policy</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/student</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/student/profile-setup</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/student/inbox</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/student/inbox/:jobId</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business/projects</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business/projects/:id</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business/projects/new</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business/profile-setup</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/login</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/signup</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/admin</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/admin/dash</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/about</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/pricing</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/faq</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/cookie-policy</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/terms-of-service</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/privacy-policy</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/student</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/student/profile-setup</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/student/inbox</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/student/inbox/:jobId</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business/projects</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business/projects/:id</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business/projects/new</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business/profile-setup</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/about</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/pricing</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/faq</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/cookie-policy</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/terms-of-service</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/privacy-policy</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/student</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/student/profile-setup</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/student/inbox</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/student/inbox/:jobId</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/profile-setup</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/inbox</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/inbox/:jobId</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business/projects</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business/projects/:id</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business/projects/new</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/business/profile-setup</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/projects</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/projects/:id</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/projects/new</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/:id</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/new</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/profile-setup</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/login</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/signup</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/admin</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/admin/dash</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://devconnect.uk/dash</loc>
+          <lastmod>2025-03-03T11:25:05.588Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+    </urlset>
